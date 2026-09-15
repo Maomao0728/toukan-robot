@@ -1,0 +1,27 @@
+target/
+node_modules/
+frontend/dist/
+frontend/node_modules/
+app/src-tauri/target/
+
+# Local runtime data and generated artifacts
+data/attachments/
+data/backups/
+data/db/*.sqlite3
+data/db/*.sqlite3-wal
+data/db/*.sqlite3-shm
+data/embeddings/
+data/exports/
+data/indexes/
+data/logs/*.log
+data/raw_resources/
+installer/
+
+# Secrets and local machine files
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+.DS_Store

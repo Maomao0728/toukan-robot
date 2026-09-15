@@ -1,0 +1,21 @@
+[package]
+name = "toukan-robot-app"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[features]
+# Release builds embed the frontend instead of loading the Vite development server.
+custom-protocol = ["tauri/custom-protocol"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tauri = { version = "2", features = [] }
+tokio.workspace = true
+toukan-robot-core = { path = "../../crates/core" }
